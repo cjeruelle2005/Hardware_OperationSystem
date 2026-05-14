@@ -1,0 +1,87 @@
+name: hardwareos
+description: Multi-tenant SaaS for hardware stores and construction suppliers
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management - Riverpod (compile-safe, low boilerplate)
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  
+  # Routing - GoRouter (declarative, type-safe)
+  go_router: ^13.0.0
+  
+  # Backend - Supabase (PostgreSQL + Auth + RLS)
+  supabase_flutter: ^2.3.0
+  
+  # Local Database - Drift (type-safe SQL, offline support)
+  drift: ^2.15.0
+  
+  # Functional Programming - Dartz (Either type for error handling)
+  dartz: ^0.10.1
+  
+  # JSON Serialization
+  json_annotation: ^4.8.1
+  
+  # HTTP Client (lightweight)
+  http: ^1.2.0
+  
+  # Connectivity Check (online/offline detection)
+  connectivity_plus: ^5.0.2
+  
+  # Secure Storage (for auth tokens)
+  flutter_secure_storage: ^9.0.0
+  
+  # Date/Time Utilities
+  intl: ^0.19.0
+  
+  # Decimal Math (precise money calculations)
+  decimal: ^2.3.3
+  
+  # UUID Generation
+  uuid: ^4.3.3
+  
+  # Value Equality (for entities)
+  equatable: ^2.0.5
+  
+  # Lightweight Animations
+  flutter_animate: ^4.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  
+  # Code Generation
+  build_runner: ^2.4.8
+  json_serializable: ^6.7.1
+  riverpod_generator: ^2.3.9
+  drift_dev: ^2.15.0
+  
+  # Testing
+  mockito: ^5.4.4
+  mocktail: ^1.0.2
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+  
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700

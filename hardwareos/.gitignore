@@ -1,0 +1,51 @@
+# See https://dart.dev/tools/pub/gitignore for a detailed gitignore examples
+
+# Files and directories created by pub
+.dart_tool/
+.packages
+build/
+pubspec.lock
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# MacOS
+.DS_Store
+
+# Coverage
+coverage/
+
+# Generated files (before code generation is run)
+*.g.dart
+*.freezed.dart
+
+# Temporary files
+*.tmp
+*.temp
+
+# Log files
+*.log
+
+# Dependencies
+vendor/
+node_modules/
+
+# Build outputs
+**/build/
+**/.dart_tool/
+
+# Test coverage
+test/coverage/
+
+# Supabase local development (if used)
+supabase/.branches/
+supabase/logs/
