@@ -1,0 +1,43 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "HardwareOS - Chrome Debug",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "deviceName": "Chrome",
+            "webRenderer": "html",
+            "args": [
+                "--web-renderer",
+                "html"
+            ]
+        },
+        {
+            "name": "HardwareOS - Chrome Release",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "deviceName": "Chrome",
+            "webRenderer": "html",
+            "args": [
+                "--web-renderer",
+                "html"
+            ]
+        },
+        {
+            "name": "HardwareOS - Web Server",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "deviceName": "Web Server",
+            "webRenderer": "html",
+            "args": [
+                "--web-hostname=localhost",
+                "--web-port=8080",
+                "--web-renderer",
+                "html"
+            ]
+        }
+    ]
+}
