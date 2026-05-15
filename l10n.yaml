@@ -1,0 +1,15 @@
+# This file configures the localization (l10n) for Flutter.
+#
+# The "arb-dir" attribute specifies the directory containing the .arb files
+# representing the translations of the application in different languages.
+# The "template-arb-file" attribute specifies the template .arb file used
+# by the Flutter tool to generate the localizations.
+# The "output-dir" attribute specifies the directory where the generated
+# Dart files are written.
+# The "generated-output-localization-file" attribute specifies the name of
+# the Dart file that contains all of the generated localizations.
+
+arb-dir: lib/l10n
+template-arb-file: app_en.arb
+output-dir: lib/generated
+output-localization-file: app_localizations.dart
